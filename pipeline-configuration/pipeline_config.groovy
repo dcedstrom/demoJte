@@ -1,3 +1,7 @@
+keywords {
+    jfrogCreds = credentials('jfrog-cicd')
+}
+
 libraries {
     maven {
         jfrog_user = jfrogCreds_USR
@@ -7,9 +11,6 @@ libraries {
     generic
 }
 
-keywords {
-    jfrogCreds = credentials('jfrog-cicd')
-}
 
 application_environments {
     dev{
