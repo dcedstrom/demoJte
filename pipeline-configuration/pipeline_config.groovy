@@ -14,8 +14,8 @@ parameters{
 
 libraries{
     maven {
-        jfrog_user = env.jfrogCreds_USR
-        jfrog_pass = env.jfrogCreds_PSW
+        jfrog_user = jfrogCreds_USR
+        jfrog_pass = jfrogCreds_PSW
         image_repo = 'venerated.jfrog.io/default-docker-local/spring-jib-jte'
     }
     generic
