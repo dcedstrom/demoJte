@@ -11,9 +11,9 @@ application_environments{
 
 libraries{
     maven {
-        jfrog_user = jfrogCreds_USR
+        jfrog_user = withCredentials([usernamePassword(credentialsId: 'jfrog-cicd', passwordVariable: 'jfrogPass', usernameVariable: 'jfrogUser')]) {return jfrogUser}
         jfrog_pass = jfrogCreds_PSW
-        image_repo = 'venerated.jfrog.io/default-docker-local/spring-jib-jte'
+        image_repo = withCredentials([usernamePassword(credentialsId: 'jfrog-cicd', passwordVariable: 'jfrogPass', usernameVariable: 'jfrogUser')]) {return jfrogPass}
     }
     generic
 }
