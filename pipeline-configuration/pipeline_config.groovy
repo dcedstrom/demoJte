@@ -2,16 +2,17 @@
 //    jfrogCreds = credentials('jfrog-cicd')
 //}
 
-application_environments {
+application_environments{
     dev{
         short_name = "aw1dd"
         //jfrogCreds = credentials('jfrog-cicd')
     }
 }
+parameters{
+    jfrogCreds = credentials('jfrog-cicd')
+}
 
-jfrogCreds = credentials('jfrog-cicd')
-
-libraries {
+libraries{
     maven {
         jfrog_user = env.jfrogCreds_USR
         jfrog_pass = env.jfrogCreds_PSW
