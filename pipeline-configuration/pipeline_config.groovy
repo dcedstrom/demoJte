@@ -1,5 +1,12 @@
-keywords {
-    jfrogCreds = credentials('jfrog-cicd')
+//keywords {
+//    jfrogCreds = credentials('jfrog-cicd')
+//}
+
+application_environments {
+    dev{
+        short_name = "aw1dd"
+        jfrogCreds = credentials('jfrog-cicd')
+    }
 }
 
 libraries {
@@ -12,8 +19,3 @@ libraries {
 }
 
 
-application_environments {
-    dev{
-        short_name = "aw1dd"
-    }
-}
