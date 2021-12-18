@@ -5,9 +5,11 @@
 application_environments {
     dev{
         short_name = "aw1dd"
-        jfrogCreds = credentials('jfrog-cicd')
+        //jfrogCreds = credentials('jfrog-cicd')
     }
 }
+
+jfrogCreds = credentials('jfrog-cicd')
 
 libraries {
     maven {
