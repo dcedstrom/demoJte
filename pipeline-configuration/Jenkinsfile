@@ -1,6 +1,2 @@
-node{
-    // checkout scm
-    unstash "workspace"
-    build()
-    output()
-}
+build()
+output()
