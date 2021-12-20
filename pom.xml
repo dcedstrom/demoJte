@@ -16,6 +16,18 @@
 	<properties>
 		<java.version>11</java.version>
 	</properties>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -55,7 +67,7 @@
 				<version>0.9.6</version>
 				<configuration>
 					<to>
-						<image>${image.path}</image>
+						<image>${env.CONTAINER_PATH}</image>
 					</to>
 				</configuration>
 			</plugin>
