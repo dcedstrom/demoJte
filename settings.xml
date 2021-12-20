@@ -51,6 +51,11 @@
                     <name>default-maven-virtual</name>
                     <url>https://venerated.jfrog.io/artifactory/default-maven-virtual</url>
                 </pluginRepository>
+                <pluginRepository>
+                    <id>repository.spring.release</id>
+                    <name>Spring GA Repository</name>
+                    <url>https://repo.spring.io/plugins-release/</url>
+                </pluginRepository>
             </pluginRepositories>
             <id>artifactory</id>
         </profile>
