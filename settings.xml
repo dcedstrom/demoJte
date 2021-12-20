@@ -13,7 +13,7 @@
             <id>snapshots</id>
         </server>
         <server>
-            <id>venerated.docker.local</id>
+            <id>venerated.jfrog.io</id>
             <username>${env.JFROG_MAVEN_PIPELINE_USERNAME}</username>
             <password>${env.JFROG_MAVEN_PIPELINE_PASSWORD}</password>
         </server>
