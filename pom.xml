@@ -81,6 +81,10 @@
 				<configuration>
 					<to>
 						<image>${env.CONTAINER_PATH}</image>
+						<auth>
+							<username>${env.JFROG_MAVEN_PIPELINE_USERNAME}</username>
+							<password>${env.JFROG_MAVEN_PIPELINE_PASSWORD}</password>
+						</auth>
 					</to>
 				</configuration>
 			</plugin>
