@@ -3,19 +3,19 @@
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <servers>
         <server>
-            <username>${JFROG_MAVEN_PIPELINE_USERNAME}</username>
-            <password>${JFROG_MAVEN_PIPELINE_PASSWORD}</password>
+            <username>${env.JFROG_MAVEN_PIPELINE_USERNAME}</username>
+            <password>${env.JFROG_MAVEN_PIPELINE_PASSWORD}</password>
             <id>central</id>
         </server>
         <server>
-            <username>${JFROG_MAVEN_PIPELINE_USERNAME}</username>
-            <password>${JFROG_MAVEN_PIPELINE_PASSWORD}</password>
+            <username>${env.JFROG_MAVEN_PIPELINE_USERNAME}</username>
+            <password>${env.JFROG_MAVEN_PIPELINE_PASSWORD}</password>
             <id>snapshots</id>
         </server>
         <server>
             <id>venerated.docker.local</id>
-            <username>${JFROG_MAVEN_PIPELINE_USERNAME}</username>
-            <password>${JFROG_MAVEN_PIPELINE_PASSWORD}</password>
+            <username>${env.JFROG_MAVEN_PIPELINE_USERNAME}</username>
+            <password>${env.JFROG_MAVEN_PIPELINE_PASSWORD}</password>
         </server>
     </servers>
     <profiles>
