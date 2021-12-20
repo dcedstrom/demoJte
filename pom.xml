@@ -77,14 +77,14 @@
 			<plugin>
 				<groupId>com.google.cloud.tools</groupId>
 				<artifactId>jib-maven-plugin</artifactId>
-				<version>0.9.6</version>
+				<version>3.1.4</version>
 				<configuration>
 					<to>
 						<image>${env.CONTAINER_PATH}</image>
-						<auth>
-							<username>${env.JFROG_MAVEN_PIPELINE_USERNAME}</username>
-							<password>${env.JFROG_MAVEN_PIPELINE_PASSWORD}</password>
-						</auth>
+<!--						<auth>-->
+<!--							<username>${env.JFROG_MAVEN_PIPELINE_USERNAME}</username>-->
+<!--							<password>${env.JFROG_MAVEN_PIPELINE_PASSWORD}</password>-->
+<!--						</auth>-->
 					</to>
 				</configuration>
 			</plugin>
