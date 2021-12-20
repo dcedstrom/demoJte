@@ -17,6 +17,19 @@
 		<java.version>11</java.version>
 	</properties>
 
+	<distributionManagement>
+		<repository>
+			<id>central</id>
+			<name>a0kvquk2ajwep-artifactory-primary-0-releases</name>
+			<url>https://venerated.jfrog.io/artifactory/default-maven-local</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>a0kvquk2ajwep-artifactory-primary-0-snapshots</name>
+			<url>https://venerated.jfrog.io/artifactory/default-maven-local</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 	<pluginRepositories>
 		<pluginRepository>
 			<id>spring-snapshots</id>
